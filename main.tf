@@ -1,7 +1,7 @@
 
 ## Providers Block
 provider "aws" {
-  region = "us-east-2"
+  region = "us-east-1"
 }
 
 terraform {
@@ -39,7 +39,7 @@ resource "aws_instance" "EC2" {
  
   ami           = "ami-00eeedc4036573771"
   instance_type = "t2.micro"
-  key_name = "us-east-2"   // "us-east-2" == this is the name of my key pair without the .pem
+  key_name = "jenkins"   
   
  tags = {
     Name = "terr-pipeline-Ec2"   
