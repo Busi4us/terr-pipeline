@@ -37,7 +37,7 @@ resource "aws_subnet" "public_subnet" {
 ##Creating EC2
 resource "aws_instance" "EC2" {
  
-  ami           = "ami-00eeedc4036573771"
+  ami           = "ami-02f3f602d23f1659d"
   instance_type = "t2.micro"
   key_name = "jenkins"   
   
