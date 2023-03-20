@@ -41,8 +41,7 @@ resource "aws_instance" "EC2" {
   instance_type = "t2.micro"
   key_name = "us-east-2"   // "us-east-2" == this is the name of my key pair without the .pem
   
-availability_zone = "us-east-2a"
  tags = {
-    Name = "terr-pipeline-EC2"   
+    Name = "terr-pipeline-Ec2"   
     }
 }
